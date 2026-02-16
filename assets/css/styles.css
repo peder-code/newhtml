@@ -126,7 +126,7 @@ a {
   padding: 0;
   display: flex;
   align-items: center;
-  gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  gap: var(--space-6);
 }
 
 .nav-links a {
@@ -139,17 +139,6 @@ a {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--color-text);
-}
-
-
-.nav-links .btn {
-  color: #08110f;
-  font-weight: 700;
-  letter-spacing: 0.015em;
-}
-
-.nav-links .btn:hover {
-  color: #08110f;
 }
 
 .btn,
@@ -338,22 +327,6 @@ h3 {
   border-left: 2px solid var(--color-accent);
 }
 
-
-.team-card {
-  padding: 0;
-  overflow: hidden;
-}
-
-.team-card img {
-  aspect-ratio: 4/3;
-  width: 100%;
-  object-fit: cover;
-}
-
-.team-card .content {
-  padding: var(--space-6);
-}
-
 .blog-card {
   overflow: hidden;
   padding: 0;
@@ -438,7 +411,7 @@ textarea {
   max-width: 65ch;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .hero-grid,
   .grid-3,
   .grid-2,
